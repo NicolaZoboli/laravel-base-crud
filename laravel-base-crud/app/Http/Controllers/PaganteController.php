@@ -12,9 +12,7 @@ class PaganteController extends Controller
 
     $paganti = Pagante::all();
 
-    var_dump($paganti); die();
-
-    return view('paganti');
+    return view('paganti', compact('paganti'));
   }
 
 }
